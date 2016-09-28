@@ -21,7 +21,8 @@ def startInstance(noOfInstances, region):
         try:
             print ('Initializing ' + str(noOfInstances) + ' EC2 instance(s) in ' + region + ' region ...')
             for i in range(noOfInstances):
-                start = aws.run_instances('ami-6869aa05', instance_type='t2.micro')
+            	# Enter the your ami-image-id
+                start = aws.run_instances('ami-image-id', instance_type='t2.micro')
                 print 'Starting Instance', i+1
                 runningInstance.append(start.instances[0])
                 print runningInstance[i]
