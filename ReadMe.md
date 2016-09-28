@@ -7,3 +7,8 @@ Enter the required inputs will for:<br>
 1. Number of instances<br>
 2. Instance region<br>
 3. Activities to be performed (start, stop, view status of instance(s))<br>
+
+<strong>Commands</strong>:-<br>
+1. start<br>
+2. status<br>
+3. stop or terminate<br>

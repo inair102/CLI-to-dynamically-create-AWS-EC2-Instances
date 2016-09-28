@@ -149,7 +149,7 @@ print 'Enter the region\n'
 region = raw_input()
 
 # Activity to do - Start/Status/Stop one or many Instances
-print 'Want to start or view status of or terminate instance?\n'
+print 'Want to START or view STATUS of or TERMINATE instance?\n'
 response = raw_input()
 while True:
     try:
@@ -158,7 +158,7 @@ while True:
             startInstance(noOfInstances, region)
         elif response == 'status':
             statusInstance(region)
-        elif response == 'terminate':
+        elif response == 'terminate' or response == 'stop':
             terminateInstance(region)
         else:
             raise ValueError
