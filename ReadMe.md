@@ -20,6 +20,8 @@ The program consists for 4 major functions<br>
 1. <strong>instanceConnection()</strong><br>
 Takes in the region as input argument and initiates a connection with Amazon AWS.<br>
 On line 10 and 11 provide the required access key and secret key.<br>
+Also line 25 requires the *ami-image-id* which can be found on the AWS Console.<br>
+AWS -> Services -> EC2 -> Instances -> Launch Instances -> Vola! ami image ids for Amazon Linux/ RedHat Enterprise Linux/ SUSE Linux Enterprise<br>
 2. <strong>startInstance()</strong><br>
 Takes in the number of isntances and the instance region as input arguments and spins up EC2 instances in the said region.<br>
 3. <strong>statusInstance()</strong><br>
